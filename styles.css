@@ -231,15 +231,15 @@ nav a:hover {
 
 /* Sections */
 section {
-    padding: 3.5rem 5%;
+    padding: 2.5rem 5%;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     color: var(--purple-accent);
     font-weight: 400;
@@ -253,21 +253,37 @@ h2::after {
     width: 60px;
     height: 2px;
     background: var(--purple-accent);
-    margin: 1rem auto 0;
+    margin: 0.5rem auto 0;
+}
+
+.section-desc {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* About Section */
+#about {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 .about-content {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .profile {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -285,6 +301,11 @@ h2::after {
     object-fit: cover;
     border-radius: 50%;
     transition: transform 0.3s ease;
+
+  pointer-events: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
 }
 
 .profile:hover .profile-img {
@@ -293,23 +314,12 @@ h2::after {
 
 .about-text {
     flex: 1;
-    min-width: 320px;
-    max-width: 650px;
+    min-width: 200px;
+    max-width: 400px;
+    text-align: center;
 }
 
-.about-text p {
-    margin-bottom: 1rem;
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    line-height: 1.8;
-    background: rgba(255, 255, 255, 0.6);
-    padding: 1.2rem;
-    border-radius: var(--radius-medium);
-    border-left: 3px solid var(--dusty-rose);
-}
-
-/* Profile Icons Styles */
-.profile-icons {
+.profile-intro {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -359,21 +369,51 @@ h2::after {
 
 .profile-header {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .profile-name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: var(--purple-accent);
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.1rem;
     letter-spacing: 0.02em;
 }
 
 .profile-title {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--dusty-rose-dark);
     font-weight: 500;
+    margin-bottom: 0.1rem;
+    letter-spacing: 0.02em;
+    display: inline-block;
+}
+
+.profile-contact {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.whatsapp-icon {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.profile-contact a {
+    display: inline-block;
+    padding: 0.8rem;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.profile-contact a:hover {
+    background: rgba(212, 149, 155, 0.2);
+}
+
+.profile-contact a:hover .whatsapp-icon {
+    transform: scale(1.1);
 }
 
 /* Tours Grid */
@@ -402,7 +442,7 @@ h2::after {
 .tour-card h3 {
     color: var(--dusty-rose-dark);
     font-size: 1.6rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
     font-weight: 500;
 }
 
@@ -415,6 +455,20 @@ h2::after {
 .tour-card h3 a:hover {
     color: var(--purple-accent);
 }
+
+.tour-card .store-type {
+    color: var(--muted-sage-dark);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    color:#5A5A5A;
+}
+/* .tour-card .location a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+} */
+
 
 .tour-card .location {
     color: var(--muted-sage-dark);
@@ -500,7 +554,7 @@ h2::after {
     color: var(--text-secondary);
     font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .food-links {
@@ -1081,12 +1135,12 @@ nav a:focus {
     }
     
     .about-content {
-        gap: 2rem;
+        gap: 1rem;
     }
     
     .profile {
-        width: 220px;
-        height: 220px;
+        width: 180px;
+        height: 180px;
     }
 }
 
@@ -1160,7 +1214,7 @@ nav a:focus {
     .about-content {
         flex-direction: column;
         text-align: center;
-        gap: 2rem;
+        gap: 1.5rem;
     }
     
     .about-text {
@@ -1272,8 +1326,8 @@ nav a:focus {
     }
     
     .profile {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
     
     .profile-mini {
