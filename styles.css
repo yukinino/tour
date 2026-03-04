@@ -64,95 +64,6 @@ body {
     font-size: clamp(0.95rem, 2vw, 1.1rem);
 }
 
-/* Navigation - Fixed and refined */
-nav {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(15px);
-    padding: 1rem 5%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    box-shadow: var(--shadow-elegant);
-    border-bottom: 1px solid var(--soft-gray);
-    transition: all 0.3s ease;
-    height: 80px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    list-style: none;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-nav a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.7rem 1.3rem;
-    border-radius: 20px;
-    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-hover) 100%);
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    position: relative;
-    font-size: 0.95rem;
-    border: 2px solid var(--dusty-rose-light);
-    white-space: nowrap;
-    box-shadow: 0 2px 8px rgba(212, 165, 165, 0.15);
-}
-
-nav a:hover {
-    color: white;
-    background: linear-gradient(135deg, var(--dusty-rose-light) 0%, var(--dusty-rose) 100%);
-    transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 4px 12px rgba(212, 165, 165, 0.3);
-    border-color: var(--dusty-rose);
-}
-
-/* Hero Section */
-/*
-.hero {
-    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-    padding: 5rem 5% 3rem;
-    text-align: center;
-    position: relative;
-}
-
-.hero-top {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.hero-text {
-    flex: 1;
-    text-align: left;
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    max-width: 900px;
-    margin: 0 auto;
-}
-*/
-
 .profile-mini {
     flex-shrink: 0;
     width: 120px;
@@ -842,6 +753,14 @@ footer {
 footer p {
     font-size: 1rem;
     line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: var(--purple-accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
 }
 
 /* Color Palette Display */
