@@ -378,6 +378,15 @@ h2::after {
     color: var(--purple-accent);
     margin-bottom: 0.1rem;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.profile-instagram-link {
+    display: inline-flex;
+    align-items: center;
 }
 
 .profile-title {
@@ -392,13 +401,14 @@ h2::after {
 .profile-socials {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0.8rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .social-icon {
-    width: 32px;
-    height: 32px;
+    width: 2.5rem;
+    height: 2.5rem;
     transition: transform 0.3s ease;
 }
 
